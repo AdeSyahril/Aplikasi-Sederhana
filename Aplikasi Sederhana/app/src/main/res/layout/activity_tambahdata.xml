@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tambahdata">
+  <TextView
+      android:id="@+id/tvNomor"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:text="Nomor" />
+  <EditText
+      android:id="@+id/etNomor"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvNomor"
+      android:layout_below="@+id/tvNomor"
+      android:inputType="number"
+      android:maxLength="10">
+    <requestFocus />
+  </EditText>
+  <TextView
+      android:id="@+id/tvNama"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/etNomor"
+      android:layout_below="@+id/etNomor"
+      android:layout_marginTop="10dp"
+      android:text="Nama" />
+  <EditText
+      android:id="@+id/etNama"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvNama"
+      android:layout_below="@+id/tvNama"
+      android:inputType="text"
+      android:maxLength="20"/>
+  <TextView
+      android:id="@+id/tvHp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/etNama"
+      android:layout_alignLeft="@+id/etNama"
+      android:layout_marginTop="10dp"
+      android:text="No HP" />
+  <EditText
+      android:id="@+id/etHp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvHp"
+      android:layout_below="@+id/tvHp"
+      android:inputType="date"/>
+  <TextView
+      android:id="@+id/tvJenis"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/etHp"
+      android:layout_below="@+id/etHp"
+      android:layout_marginTop="10dp"
+      android:text="Jenis Kelamin" />
+  <EditText
+      android:id="@+id/etJenis"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvJenis"
+      android:layout_below="@+id/tvJenis"
+      android:inputType="text"
+      android:maxLength="1"
+      android:hint="L atau P"/>
+  <TextView
+      android:id="@+id/tvAlmt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/etJenis"
+      android:layout_below="@+id/etJenis"
+      android:layout_marginTop="10dp"
+      android:text="Alamat" />
+  <EditText
+      android:id="@+id/etAlmt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvAlmt"
+      android:layout_below="@+id/tvAlmt"
+      android:maxLength="100"
+      android:inputType="text"/>
+  <Button
+      android:id="@+id/btnSimpan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/etAlmt"
+      android:layout_alignParentBottom="true"
+      android:text="Simpan" />
+  <Button
+      android:id="@+id/btnKembali"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Kembali"
+      android:layout_alignParentBottom="true"
+      android:layout_alignRight="@+id/etAlmt"
+      android:layout_alignEnd="@+id/etAlmt" />
+</RelativeLayout>
